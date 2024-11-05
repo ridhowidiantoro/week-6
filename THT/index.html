@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">HOME</a></li>
+                <li><a href="#" onclick="showSection('about')">ABOUT</a></li>
+                <li><a href="#" onclick="showSection('riwayatpendidikan')">Riwayat Pendidikan</a></li>
+                <li><a href="#" onclick="showSection('riwayatorganisasi')">Riwayat Organisasi</a></li>
+                <li><a href="#" onclick="showSection('pengalaman')">Pengalaman</a></li>
+                <li><a href="#" onclick="showSection('keahlian')">Keahlian</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('perkenalan')">Video Perkenalan</a></li>
+                <li><a href="#" onclick="showSection('socialmedia')">Social Media </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container active" id="home">
+        <h1>Selamat Datang di Portofolio Saya</h1>
+        <p>Hallo, perkenalkan nama lengkap saya Ridho Pratama Widiantoro. Saya biasa dipanggil oleh teman-teman saya, keluarga, maupun kerabat saya Ridho.</p>
+        <p>Saya mahasiswa Ilmu Komputer Universitas Pertamina angkatan 2022. Saat ini saya duduk di bangku perkuliahan semester 5.</p>
+        <p>Saat ini saya memiliki ketertarikan di bagian data, di antaranya sebagai data analisis maupun yang lainnya.</p>
+    </div>
+
+    <div class="container" id="about">
+        <img id="gambar" src="foto profil.jpg" alt="Foto Profil Ridho" width="200" height="180">
+        <h2>About Me :</h2>
+        <p><b>Nama Lengkap:</b> Ridho Pratama Widiantoro <br>
+            <b>Tempat & Tanggal Lahir:</b> Jakarta, 24 April 2004<br>
+            <b>Jurusan:</b> Ilmu Komputer <br>
+            <b>Universitas:</b> Universitas Pertamina <br>
+            <b>Angkatan:</b> 2022 <br>
+        </p>
+    </div>
+
+    <div class="container" id="riwayatpendidikan">
+        <h2>Riwayat Pendidikan</h2> 
+        <ul>
+            <li>TKIT Lebah Kecil Jakarta (2008-2010)</li>
+            <li>SDN Makasar 07 Pagi Jakarta (2010-2016)</li>
+            <li>SMPIT Buahati Islamic School Jakarta (2016-2019)</li>
+            <li>SMAIT Buahati Islamic School Jakarta (2019-2022)</li>
+            <li>Universitas Pertamina Jakarta (2022 - sekarang)</li>
+        </ul>
+    </div>
+
+    <div class="container" id="riwayatorganisasi">
+        <h2>Riwayat Organisasi</h2>
+        <ul>
+            <li>Anggota OSIS SMAIT Buahati Islamic School Jakarta (2020-2021)</li>
+            <li>Anggota Himpunan Mahasiswa Ilmu Komputer Universitas Pertamina (2024 - sekarang)</li>
+        </ul>
+    </div>
+
+    <div class="container" id="pengalaman">
+        <h2>Pengalaman</h2>
+        <ul>
+            <li>Panitia Buahati Annual Festival 2020</li>
+            <li>Panitia Buahati Annual Festival 2021</li>
+            <li>Panitia CITEUP 6.0 2023 divisi Acara Teknis</li>
+            <li>Panitia AOT & CatchUP 7.0 divisi PDD</li>
+            <li>Panitia CITEUP 2024 divisi Publikasi, Dokumentasi</li>
+        </ul>
+    </div>
+
+    <div class="container" id="keahlian">
+        <h2>Keahlian Saya</h2>
+        <table border="1">
+            <tr>
+                <th>No</th>
+                <th>Keahlian</th>
+            </tr>
+            <tr>
+                <td>1</td> 
+                <td>Critical Thinking</td>
+            </tr>
+            <tr>
+                <td>2</td> 
+                <td>C++</td>
+            </tr>
+            <tr>
+                <td>3</td> 
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>4</td> 
+                <td>HTML</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class ="container" id="perkenalan">
+        <section>
+            <h2>Video Perkenalan</h2>
+            <iframe width="300" height="400" 
+                src= "vid.mp4"
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+        <section>
+            <h2>Audio Favorit</h2>
+            <audio controls autoplay loop>
+                <source src="Justin Bieber - Flatline (Lyrics) [ ezmp3.cc ].mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung audio.
+            </audio>
+        </section>
+        </div>
+
+        <div class="container" id="contact" style="display: none;">
+            <h2>Hubungi Anda</h2>
+            <form onsubmit="validateAndSend(); return false;">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name">
+    
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+    
+                <label for="phone">Nomor HP:</label>
+                <input type="text" id="phone" name="phone" >
+    
+                <label for="message">Deskripsi:</label>
+                <textarea id="message" name="message"></textarea>
+    
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+
+       
+        <div class="container" id="socialmedia">
+            <h2>Social Media</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ridhowidiantoro_" target="_blank">
+                    <img src="instagram.img.jpeg" width="40" height="40" alt="Instagram Logo"> 
+                </a>
+                <a href="https://www.linkedin.com/in/ridho-widiantoro" target="_blank">
+                    <img src="linkeidn.img.png" width="40" height="40" alt="LinkedIn Logo">
+                </a>
+                <a href="https://github.com/ridhowidiantoro" target="_blank">
+                    <img src="github.img.jpeg" width="40" height="40" alt="GitHub Logo">
+                </a>
+            </div>
+        </div>
+
+        
+         <script src="script.js"></script>
+    </body>
+</html>
+
+
+    
